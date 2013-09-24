@@ -1,15 +1,24 @@
 body {
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
+	margin: 0;
 	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 84.5%;
 }
 .sticky {
 	position: fixed;
 	top: 0;
-	width: auto;
 }
+
+.painelAbas {
+}
+
 .painelAbas .bandejaDeRotulos {
+	display: block;
+	float: left;
+	
+	border: 1px solid #818181;
+	background-color: #B9B9B9;
+	/*
 	border-left: 1px solid #818181;
 	border-top: 1px solid #818181;
 	border-right: 1px solid #818181;
@@ -21,10 +30,18 @@ body {
 	border-top-right-radius: 5px;
 	-moz-border-top-right-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
+	*/
+}
+
+.painelAbas .bandejaDeRotulos .rotulo {
+	background-color: #F6D565;
 }
 
 .painelAbas .abas {
-	padding: 10px;
+	display: block;
+	float: right;
+	border: 1px solid #818181;
+	/*
 	border-left: 1px solid #818181;
 	border-bottom: 1px solid #818181;
 	border-right: 1px solid #818181;
@@ -34,6 +51,7 @@ body {
 	border-bottom-right-radius: 5px;
 	-moz-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-right-radius: 5px;
+	*/
 }
 
 .painelAbas .abas .aba .rotulo {

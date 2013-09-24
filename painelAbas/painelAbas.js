@@ -24,24 +24,26 @@ function PainelAbas(vElementoDOM) {
 	console.log('Abas encontradas para o painel ' + this.elementoDOM + ': ' + elementosAbas.length);
 	for (var i = 0; i < elementosAbas.length; i++) {
 		this.abas[i] = new Aba(elementosAbas[i]);
+		this.divBandejaRotulos.appendChild(this.abas[i].divRotulo.cloneNode());
 	}
 
 	this.onScroll = function() {
+		
 		var topoDaBarra = window.scrollY;
 		var topoDoPainel = this.elementoDOM.offsetTop;
 		console.log(topoDaBarra + "," + topoDoPainel);
 		if (topoDaBarra > topoDoPainel) {
 			//fixar área do rotulos
 			this.divBandejaRotulos.classList.add('sticky');
-			this.divBandejaRotulos.style.width = getComputedStyle(this.divBandejaRotulos.parentNode, null).width;
+			//this.divBandejaRotulos.style.width = getComputedStyle(this.divBandejaRotulos.parentNode, null).width;
 
 			for (var i = 0; i < this.abas.length; i++) {
 				var aba = this.abas[i];
 				var topoDaAba = aba.elementoDOM.offsetTop;
 				if (topoDaBarra > topoDaAba) {
-					aba.divRotulo.classList.add('sticky');
+					//aba.divRotulo.classList.add('sticky');
 				} else {
-					aba.divRotulo.classList.remove('sticky');
+					//aba.divRotulo.classList.remove('sticky');
 				}
 			}
 		} else {
@@ -89,7 +91,7 @@ function onScroll(e) {
 		var aba = abas[i];
 		if (window.scrollY >= aba.offsetTop) {
 			aba.classList.add('sticky');
-			aba.style.width = getComputedStyle(aba.parentNode, null).width;
+			//aba.style.width = getComputedStyle(aba.parentNode, null).width;
 		}
 	}
 
