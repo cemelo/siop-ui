@@ -1,0 +1,78 @@
+body {
+	width: 80%;
+	margin: 0 auto;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 84.5%;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: auto;
+}
+.painelAbas .bandejaDeRotulos {
+	border-left: 1px solid #818181;
+	border-top: 1px solid #818181;
+	border-right: 1px solid #818181;
+	background-color: #B9B9B9;
+	height: 40px;
+	border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+.painelAbas .abas {
+	padding: 10px;
+	border-left: 1px solid #818181;
+	border-bottom: 1px solid #818181;
+	border-right: 1px solid #818181;
+	border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+.painelAbas .abas .aba .rotulo {
+	border-left: 1px solid #B6B6B6;
+	border-top: 1px solid #B6B6B6;
+	border-right: 1px solid #B6B6B6;
+	background-color: #F6D565;
+	border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	height: 30px;
+	padding: 0px 5px;
+	width: 100px;
+}
+
+.painelAbas .abas .aba:nth-child(2) .rotulo {
+	left: 100px;
+}
+.painelAbas .abas .aba:nth-child(3) .rotulo {
+	left: 200px;
+}
+.painelAbas .abas .aba:nth-child(4) .rotulo {
+	left: 300px;
+}
+
+.painelAbas .abas .aba .conteudo {
+	padding: 10px;
+	border: 1px solid #B6B6B6;
+	border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	margin-bottom: 20px;
+}
