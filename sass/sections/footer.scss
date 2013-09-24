@@ -1,0 +1,12 @@
+@import "fonts";
+@import "swatches";
+
+footer {
+  @include font-display-sans($weight: 600);
+
+  background-color: $dark-gray-dark;
+  color: $light-gray-dark;
+  text-shadow: 1px 1px $black;
+
+  padding: 10px;
+}

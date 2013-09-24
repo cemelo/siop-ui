@@ -6,11 +6,11 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="-1">
 
-	<!--link rel="stylesheet" type="text/less" href="less/main.less"-->
-	<link rel="stylesheet" type="text/css" href="less/main.css">
-
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 	<script type="text/javascript" src="js/vendor/modernizr-build.min.js"></script>
-	<!--script type="text/javascript" src="js/vendor/less-1.4.1.min.js"></script-->
+	<script type="text/javascript" src="js/vendor/dojo/dojo.js"
+		data-dojo-config="async:true"></script>
 </head>
 
 <body>
@@ -31,7 +31,10 @@
 
 	<nav>
 		<div id="views">
-			<span id="selected-box">Órgão</span>
+			<div id="selected-box">
+				Órgão <img src="img/up-down.png" />
+			</div>
+
 			<div id="views-container">
 				Container!!!!
 			</div>
@@ -44,7 +47,11 @@
 		</ul>
 
 		<div id="user-info">
-			user
+			<div class="nested-grid">
+				<div id="user-photo"><img src="img/user-photo.png" /></div>
+				<div id="user-name">Fulano de Tal jkgh kjgh kjg hkjgh jkh gkjhg kjhgkjgh kj</div>
+				<div class="drop-down"><img src="img/white-down-arrow.png" /></div>
+			</div>
 		</div>
 	</nav>
 
@@ -70,11 +77,16 @@
 		</nav>
 
 		<section id="middle">
-
+			<h1>20000 Presidência da República</h1>
 		</section>
 
 		<aside>
+			<h1>Atividade Recente</h1>
 		</aside>
 	</div>
+
+	<footer>
+		Ministério do Planejamento, Orçamento e Gestão
+	</footer>
 </body>
 </html>

@@ -1,0 +1,60 @@
+@import "grid";
+@import "fonts";
+@import "swatches";
+
+body > #content {
+	@include container;
+
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><rect width="300" height="100" style="fill:rgb(0,0,0);stroke-width:0;stroke:rgb(0,0,0)"/></svg>")');
+
+	aside, nav {
+		@include column(2);
+
+		background-color: $light-gray-light;
+		padding: 10px;
+	}
+
+	& > nav, & > aside {
+		h1 {
+			@include font-sans-serif(11px, bold);
+
+			color: $dark-gray-light;
+			
+			text-transform: uppercase;
+			text-shadow: 1px 1px white;
+
+			display: block;
+			margin: 10px 0 5px 0;
+			padding: 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: block;
+				margin: 0 0 5px 0;
+				padding: 0;
+			}
+
+			a {
+				@include font-display-sans(14px);
+				
+				color: $dark-gray-medium;
+				text-decoration: none;
+
+				margin-left: 15px;
+			}
+		}
+	}
+
+	section#middle {
+		@include column(8);
+	}
+}

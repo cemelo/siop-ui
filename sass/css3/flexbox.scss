@@ -1,0 +1,107 @@
+@import "compass/css3/shared";
+
+@mixin display-flex {
+	@include experimental-value(display, flex,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-flex-direction: row !default;
+
+@mixin flex-direction($direction: $default-flex-direction) {
+	$direction: unquote($direction);
+
+	@include experimental-value(flex-direction, $direction,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-flex-wrap: nowrap !default;
+
+@mixin flex-wrap($wrap: $default-flex-wrap) {
+	$wrap: unquote($wrap);
+
+	@include experimental-value(flex-wrap, $wrap,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-justify-content: flex-start !default;
+
+@mixin justify-content($justify: $default-justify-content) {
+	$justify: unquote($justify);
+
+	@include experimental-value(justify-content, $justify,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-align-items: stretch !default;
+
+@mixin align-items($alignment: $default-align-items) {
+	$alignment: unquote($alignment);
+
+	@include experimental-value(align-items, $alignment,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-align-content: stretch !default;
+
+@mixin align-content($alignment: $default-align-content) {
+	$alignment: unquote($alignment);
+
+	@include experimental-value(align-content, $alignment,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-flex-grow: 0 !default;
+
+@mixin flex-grow($grow: $default-flex-grow) {
+	$grow: unquote($grow);
+
+	@include experimental-value(flex-grow, $grow,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-flex-shrink: 1 !default;
+
+@mixin flex-shrink($shrink: $default-flex-shrink) {
+	$shrink: unquote($shrink);
+
+	@include experimental-value(flex-shrink, $shrink,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-flex-basis: auto !default;
+
+@mixin flex-basis($basis: $default-flex-basis) {
+	$basis: unquote($basis);
+
+	@include experimental-value(flex-basis, $basis,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-order: 0 !default;
+
+@mixin order($order: $default-order) {
+	$order: unquote($order);
+
+	@include experimental-value(order, $order,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}
+
+$default-align-self: auto !default;
+
+@mixin align-self($alignment: $default-align-self) {
+	$alignment: unquote($alignment);
+
+	@include experimental-value(align-self, $alignment,
+		not -moz, -webkit, not -o, not -ms, not -khtml, official
+	);
+}

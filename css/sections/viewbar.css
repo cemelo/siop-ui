@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Signika:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+/* line 36, ../../sass/grid.scss */
+.no-flexbox body {
+  width: 100%;
+  *zoom: 1; }
+  /* line 27, ../../sass/grid.scss */
+  .no-flexbox body:before, .no-flexbox body:after {
+    content: "";
+    display: table; }
+  /* line 31, ../../sass/grid.scss */
+  .no-flexbox body:after {
+    clear: both; }
+
+/* line 5, ../../sass/sections/viewbar.scss */
+body > nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: Signika, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #434a54;
+  color: #f5f7fa;
+  height: 50px; }
+  /* line 42, ../../sass/grid.scss */
+  .no-flexbox body > nav {
+    margin: 0 0%;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 27, ../../sass/grid.scss */
+    .no-flexbox body > nav:before, .no-flexbox body > nav:after {
+      content: "";
+      display: table; }
+    /* line 31, ../../sass/grid.scss */
+    .no-flexbox body > nav:after {
+      clear: both; }
+  /* line 49, ../../sass/grid.scss */
+  .flexbox body > nav {
+    display: -webkit-flex;
+    display: flex; }
+  /* line 14, ../../sass/sections/viewbar.scss */
+  body > nav #views {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%;
+    padding: 10px; }
+    /* line 75, ../../sass/grid.scss */
+    .no-flexbox body > nav #views {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+    /* line 19, ../../sass/sections/viewbar.scss */
+    body > nav #views #selected-box {
+      background-color: #656d78;
+      color: #f5f7fa;
+      display: block;
+      padding: 6px 10px 6px 10px; }
+      /* line 26, ../../sass/sections/viewbar.scss */
+      body > nav #views #selected-box img {
+        float: right;
+        margin-top: 2px; }
+    /* line 32, ../../sass/sections/viewbar.scss */
+    body > nav #views #views-container {
+      background-color: #656d78;
+      display: none;
+      position: absolute;
+      height: 200px;
+      width: 500px; }
+  /* line 42, ../../sass/sections/viewbar.scss */
+  body > nav > ul#top-menu {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    /* line 75, ../../sass/grid.scss */
+    .no-flexbox body > nav > ul#top-menu {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+    /* line 51, ../../sass/sections/viewbar.scss */
+    body > nav > ul#top-menu li {
+      display: inline-block; }
+      /* line 54, ../../sass/sections/viewbar.scss */
+      body > nav > ul#top-menu li a {
+        color: #ccd1d9;
+        font-family: Signika, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        padding: 17px 10px 16px 10px; }
+        /* line 63, ../../sass/sections/viewbar.scss */
+        body > nav > ul#top-menu li a.selected, body > nav > ul#top-menu li a:hover, body > nav > ul#top-menu li a:focus {
+          color: #f5f7fa; }
+  /* line 70, ../../sass/sections/viewbar.scss */
+  body > nav div#user-info {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%;
+    background: #323943;
+    padding: 0 10px 0 10px;
+    height: 50px; }
+    /* line 75, ../../sass/grid.scss */
+    .no-flexbox body > nav div#user-info {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+    /* line 78, ../../sass/sections/viewbar.scss */
+    body > nav div#user-info div.nested-grid {
+      width: 100% -correction; }
+      /* line 59, ../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div.nested-grid {
+        display: block;
+        margin: 0 0% -correction;
+        overflow: hidden;
+        *zoom: 1; }
+        /* line 27, ../../sass/grid.scss */
+        .no-flexbox body > nav div#user-info div.nested-grid:before, .no-flexbox body > nav div#user-info div.nested-grid:after {
+          content: "";
+          display: table; }
+        /* line 31, ../../sass/grid.scss */
+        .no-flexbox body > nav div#user-info div.nested-grid:after {
+          clear: both; }
+      /* line 67, ../../sass/grid.scss */
+      .flexbox body > nav div#user-info div.nested-grid {
+        display: -webkit-flex;
+        display: flex; }
+    /* line 82, ../../sass/sections/viewbar.scss */
+    body > nav div#user-info div#user-name {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 70.83333%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      /* line 75, ../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div#user-name {
+        display: inline-block;
+        float: left;
+        margin: 0 0%;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; }
+    /* line 90, ../../sass/sections/viewbar.scss */
+    body > nav div#user-info div#user-photo {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 20.83333%; }
+      /* line 75, ../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div#user-photo {
+        display: inline-block;
+        float: left;
+        margin: 0 0%;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; }
+    /* line 94, ../../sass/sections/viewbar.scss */
+    body > nav div#user-info div.drop-down {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 8.33333%;
+      padding-left: 5px; }
+      /* line 75, ../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div.drop-down {
+        display: inline-block;
+        float: left;
+        margin: 0 0%;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; }
+    /* line 100, ../../sass/sections/viewbar.scss */
+    body > nav div#user-info div#user-photo, body > nav div#user-info div#user-name, body > nav div#user-info div.drop-down {
+      line-height: 50px; }
+      /* line 103, ../../sass/sections/viewbar.scss */
+      body > nav div#user-info div#user-photo img, body > nav div#user-info div#user-name img, body > nav div#user-info div.drop-down img {
+        vertical-align: middle; }

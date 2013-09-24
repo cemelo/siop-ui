@@ -1,0 +1,95 @@
+@import "css3/flexbox";
+@import "compass/css3/box-sizing";
+
+$column-width: 60;
+$gutter-width: 0;
+$columns: 12;
+
+@function gridsystem-width($columns:$columns) {
+  @return ($column-width * $columns) + ($gutter-width * $columns);
+}
+
+//$total-width: gridsystem-width($columns);
+
+$total-width: 100%;
+
+// Uncomment these two lines and the star-hack width/margin lines below to
+// enable sub-pixel fix for IE6 & 7. See http://tylertate.com/blog/2012/01/05/subpixel-rounding.html
+// $min-width: 999999;
+// $correction: 0.5 / $min-width * 100;
+$correction: 0;
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+  *zoom:1;
+
+  &:before,
+  &:after {
+      content:"";
+      display:table;
+  }
+  &:after {
+      clear:both;
+  }
+}
+
+.no-flexbox body {
+  width: 100%;
+  @include clearfix();
+}
+
+@mixin container() {
+  .no-flexbox & {
+    margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
+    overflow: hidden;
+
+    @include clearfix();
+  }
+
+  .flexbox & {
+    @include display-flex();
+  }
+
+  @include box-sizing(border-box);
+
+  width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
+}
+
+@mixin row($columns:$columns) {
+  .no-flexbox & {
+    display: block;
+    margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1)-correction;
+    overflow: hidden;
+
+    @include clearfix();
+  }
+
+  .flexbox & {
+    @include display-flex();
+  }
+
+  width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns))-correction;
+}
+
+@mixin column($x, $columns:$columns) {
+  .no-flexbox & {
+    display: inline-block;
+    float: left;
+    margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns))-$correction;
+
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+  
+  @include box-sizing(border-box);
+
+  width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
+}
+
+@mixin push($offset:1) {
+  margin-left: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
+
+@mixin pull($offset:1) {
+  margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
