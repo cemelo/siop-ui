@@ -6,13 +6,11 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="-1">
 
-	<link rel="stylesheet" type="text/less" href="less/main.less">
-
-	<script> /* Provisory for dev environment: */ localStorage.clear(); </script>
-	<script>var less=less||{};less.env='development';</script>
+	<!--link rel="stylesheet" type="text/less" href="less/main.less"-->
+	<link rel="stylesheet" type="text/css" href="less/main.css">
 
 	<script type="text/javascript" src="js/vendor/modernizr-build.min.js"></script>
-	<script type="text/javascript" src="js/vendor/less-1.4.1.min.js"></script>
+	<!--script type="text/javascript" src="js/vendor/less-1.4.1.min.js"></script-->
 </head>
 
 <body>
@@ -34,24 +32,45 @@
 	<nav>
 		<div id="views">
 			<span id="selected-box">Órgão</span>
+			<div id="views-container">
+				Container!!!!
+			</div>
 		</div>
 
-		<ul>
+		<ul id="top-menu">
 			<li><a class="selected" href="#">Visão Geral</a></li>
 			<li><a href="#">Dados Orçamentários</a></li>
 			<li><a href="#">Relatórios</a></li>
 		</ul>
 
-		<div id="user">
+		<div id="user-info">
 			user
 		</div>
 	</nav>
 
 	<div id="content">
-		<aside>
-		</aside>
+		<nav id="left-menu">
+			<h1>Fase Qualitativa</h1>
+			<ul>
+				<li><a href="#">Novo Programa</a></li>
+				<li><a href="#">Nova Ação</a></li>
+				<li><a href="#">Novo Localizador</a></li>
+			</ul>
+
+			<h1>Fase Quantitativa</h1>
+			<ul>
+				<li><a href="#">Nova Proposta</a></li>
+			</ul>
+
+			<h1>Alterações Orçamentárias</h1>
+			<ul>
+				<li><a href="#">Novo Pedido</a></li>
+				<li><a href="#">Reabertura</a></li>
+			</ul>
+		</nav>
 
 		<section id="middle">
+
 		</section>
 
 		<aside>

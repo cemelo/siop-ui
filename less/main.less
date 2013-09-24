@@ -5,8 +5,6 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:300,400,600);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 
-
-
 @import "mixins/flexbox.less";
 
 header {
@@ -19,7 +17,7 @@ header {
 	background-color: @grass-dark;
 	border-bottom: 2px solid @grass-darker;
 
-	#logotype {
+	& > #logotype {
 		color: @light-gray-light;
 		font-family: Signika, Arial, Helvetica, sans-serif;
 		font-size: 22pt;
@@ -42,11 +40,19 @@ header {
 	}
 }
 
-nav {
+body > nav {
 	.display-flex();
 	.flex-direction(horizontal);
 	.flex-wrap(nowrap);
 	.align-items(stretch);
+
+	.no-flexbox & {
+		display: table;
+
+		& > * {
+			display: table-cell;
+		}
+	}
 
 	background-color: @dark-gray-dark;
 	color: @light-gray-light;
@@ -55,6 +61,7 @@ nav {
 
 	#views {
 		padding: 10px;
+		width: 17%;
 
 		#selected-box {
 			background-color: @dark-gray-medium;
@@ -63,16 +70,24 @@ nav {
 			box-sizing: border-box;
 			display: block;
 			padding: 6px 10px 6px 10px;
-			width: 170px;
+		}
+
+		#views-container {
+			background-color: @dark-gray-medium;
+			
+			display: none;
+			position: absolute;
+			height: 200px;
+			width: 500px;
 		}
 	}
 
-	ul {
-		.flex-grow(1);
-
+	& > ul#top-menu {
 		list-style-type: none;
+
 		margin: 0;
 		padding: 0;
+		width: 66%;
 
 		li {
 			display: inline-block;
@@ -92,6 +107,14 @@ nav {
 			}
 		}
 	}
+
+	div#user-info {
+		background: @black;
+
+		padding: 10px;
+		height: 30px;
+		width: 17%;
+	}
 }
 
 #content {
@@ -100,9 +123,61 @@ nav {
 	.flex-wrap(nowrap);
 	.align-items(stretch);
 
-	aside {
+	.no-flexbox & {
+		display: table;
+		width: 100%;
+
+		& > * {
+			display: table-cell;
+		}
+	}
+
+	aside, nav {
 		background-color: @light-gray-light;
+		
+		box-sizing: border-box;
+		padding: 10px;
 		width: 17%;
+	}
+
+	nav#left-menu {
+		h1 {
+			color: @dark-gray-light;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-shadow: 1px 1px white;
+
+			display: block;
+			margin: 15px 0 0 0;
+			padding: 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: block;
+				margin: 5px 0 0 0;
+				padding: 0;
+			}
+
+			a {
+				color: @dark-gray-medium;
+				font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				text-decoration: none;
+
+				margin-left: 15px;
+			}
+		}
 	}
 
 	section#middle {
