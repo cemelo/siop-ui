@@ -1,92 +1,106 @@
 <!doctype html>
 
-<html lang="pt_BR">
+<html lang="pt_BR" class="flexbox">
 <head>
-	<title>Sistema Integrado de Planejamento e Orçamento</title>
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="-1">
+  <title>Sistema Integrado de Planejamento e Orçamento</title>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	
-	<script type="text/javascript" src="js/vendor/modernizr-build.min.js"></script>
-	<script type="text/javascript" src="js/vendor/dojo/dojo.js"
-		data-dojo-config="async:true"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+  <script>
+    var dojoConfig = {
+        parseOnLoad: true,
+        async: true,
+        baseUrl: "/js/",
+        tlmSiblingOfDojo: false,
+        packages: [
+            { name: "dojo", location: "vendor/dojo" },
+            { name: "dijit", location: "vendor/dijit" },
+            { name: "dojox", location: "vendor/dojox" },
+            { name: "siop", location: "siop" }
+        ],
+        deps: ['dojo/parser'],
+        cacheBust: true
+    };
+  </script>
+  <script type="text/javascript" src="js/vendor/dojo/dojo.js" data-dojo-config="async:true, parseOnLoad:true"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
-	<header>
-		<div id="logotype">
-			<span><img alt="Siop" src="img/logo.png" /></span>
-			<span>Siop</span>
-		</div>
+  <header>
+    <div id="logotype">
+      <span><img alt="Siop" src="img/logo.png" /></span>
+      <span>Siop</span>
+    </div>
 
-		<div id="search">
-			as
-		</div>
+    <div id="search">
+      as
+    </div>
 
-		<div id="notifications">
-			aa
-		</div>
-	</header>
+    <div id="notifications">
+      aa
+    </div>
+  </header>
 
-	<nav>
-		<div id="views">
-			<div id="selected-box">
-				Órgão <img src="img/up-down.png" />
-			</div>
+  <nav>
+    <div id="views" data-dojo-type="siop/ViewSelector">
+    </div>
 
-			<div id="views-container">
-				Container!!!!
-			</div>
-		</div>
+    <ul id="top-menu">
+      <li><a class="selected" href="#">Visão Geral</a></li>
+      <li><a href="#">Dados Orçamentários</a></li>
+      <li><a href="#">Relatórios</a></li>
+    </ul>
 
-		<ul id="top-menu">
-			<li><a class="selected" href="#">Visão Geral</a></li>
-			<li><a href="#">Dados Orçamentários</a></li>
-			<li><a href="#">Relatórios</a></li>
-		</ul>
+    <div id="user-info">
+      <div class="nested-grid">
+        <div id="user-photo"><img src="img/user-photo.png" /></div>
+        <div id="user-name">Fulano de Tal jkgh kjgh kjg hkjgh jkh gkjhg kjhgkjgh kj</div>
+        <div class="drop-down"><img src="img/white-down-arrow.png" /></div>
+      </div>
 
-		<div id="user-info">
-			<div class="nested-grid">
-				<div id="user-photo"><img src="img/user-photo.png" /></div>
-				<div id="user-name">Fulano de Tal jkgh kjgh kjg hkjgh jkh gkjhg kjhgkjgh kj</div>
-				<div class="drop-down"><img src="img/white-down-arrow.png" /></div>
-			</div>
-		</div>
-	</nav>
+      <div id="user-menu">
+        User Menu!!!
+      </div>
+    </div>
+  </nav>
 
-	<div id="content">
-		<nav id="left-menu">
-			<h1>Fase Qualitativa</h1>
-			<ul>
-				<li><a href="#">Novo Programa</a></li>
-				<li><a href="#">Nova Ação</a></li>
-				<li><a href="#">Novo Localizador</a></li>
-			</ul>
+  <div id="container">
+    <nav id="left-menu">
+      <h1>Fase Qualitativa</h1>
+      <ul>
+        <li><a href="#">Novo Programa</a></li>
+        <li><a href="#">Nova Ação</a></li>
+        <li><a href="#">Novo Localizador</a></li>
+      </ul>
 
-			<h1>Fase Quantitativa</h1>
-			<ul>
-				<li><a href="#">Nova Proposta</a></li>
-			</ul>
+      <h1>Fase Quantitativa</h1>
+      <ul>
+        <li><a href="#">Nova Proposta</a></li>
+      </ul>
 
-			<h1>Alterações Orçamentárias</h1>
-			<ul>
-				<li><a href="#">Novo Pedido</a></li>
-				<li><a href="#">Reabertura</a></li>
-			</ul>
-		</nav>
+      <h1>Alterações Orçamentárias</h1>
+      <ul>
+        <li><a href="#">Novo Pedido</a></li>
+        <li><a href="#">Reabertura</a></li>
+      </ul>
+    </nav>
 
-		<section id="middle">
-			<h1>20000 Presidência da República</h1>
-		</section>
+    <section id="content">
+      <header>
+        <h1>20000 Presidência da República</h1>
+      </header>
+    </section>
 
-		<aside>
-			<h1>Atividade Recente</h1>
-		</aside>
-	</div>
+    <aside>
+      <h1>Atividade Recente</h1>
+    </aside>
+  </div>
 
-	<footer>
-		Ministério do Planejamento, Orçamento e Gestão
-	</footer>
+  <footer>
+    Ministério do Planejamento, Orçamento e Gestão
+  </footer>
 </body>
 </html>

@@ -1,0 +1,71 @@
+/* line 4, ../../../sass/sections/header/nav.scss */
+body > nav {
+  font-family: Signika, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #434a54;
+  color: #f5f7fa;
+  height: 50px;
+  /**
+   * View Menu
+   */ }
+  /* line 11, ../../../sass/sections/header/nav.scss */
+  body > nav #views {
+    padding: 10px; }
+    /* line 14, ../../../sass/sections/header/nav.scss */
+    body > nav #views > #selected-box {
+      background-color: #656d78;
+      color: #f5f7fa;
+      display: block;
+      padding: 6px 10px 6px 10px; }
+      /* line 20, ../../../sass/sections/header/nav.scss */
+      body > nav #views > #selected-box img {
+        float: right;
+        margin-top: 2px; }
+    /* line 26, ../../../sass/sections/header/nav.scss */
+    body > nav #views > #views-container {
+      background-color: #656d78;
+      display: none;
+      position: absolute; }
+  /* line 36, ../../../sass/sections/header/nav.scss */
+  body > nav > ul#top-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    /* line 41, ../../../sass/sections/header/nav.scss */
+    body > nav > ul#top-menu li {
+      display: inline-block; }
+      /* line 44, ../../../sass/sections/header/nav.scss */
+      body > nav > ul#top-menu li a {
+        font-family: Signika, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color: #ccd1d9;
+        text-decoration: none;
+        display: block;
+        padding: 17px 10px 16px 10px; }
+        /* line 52, ../../../sass/sections/header/nav.scss */
+        body > nav > ul#top-menu li a.selected, body > nav > ul#top-menu li a:hover, body > nav > ul#top-menu li a:focus {
+          color: #f5f7fa; }
+  /* line 59, ../../../sass/sections/header/nav.scss */
+  body > nav div#user-info {
+    background: #323943;
+    height: 50px;
+    padding: 0 10px 0 10px; }
+    /* line 64, ../../../sass/sections/header/nav.scss */
+    body > nav div#user-info div.drop-down {
+      padding-left: 5px; }
+    /* line 68, ../../../sass/sections/header/nav.scss */
+    body > nav div#user-info div#user-photo, body > nav div#user-info div#user-name, body > nav div#user-info div.drop-down {
+      line-height: 50px; }
+      /* line 71, ../../../sass/sections/header/nav.scss */
+      body > nav div#user-info div#user-photo img, body > nav div#user-info div#user-name img, body > nav div#user-info div.drop-down img {
+        vertical-align: middle; }
+    /* line 76, ../../../sass/sections/header/nav.scss */
+    body > nav div#user-info div#user-menu {
+      background-color: #323943;
+      display: none;
+      position: absolute;
+      height: 200px;
+      width: 500px;
+      right: 0; }

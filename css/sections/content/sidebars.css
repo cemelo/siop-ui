@@ -1,0 +1,32 @@
+/* line 6, ../../../sass/sections/content/sidebars.scss */
+#container > nav h1, #container > aside h1 {
+  font-family: Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #aab2bd;
+  text-transform: uppercase;
+  text-shadow: 1px 1px white;
+  display: block;
+  margin: 10px 0 5px 0;
+  padding: 0; }
+  /* line 18, ../../../sass/sections/content/sidebars.scss */
+  #container > nav h1:first-child, #container > aside h1:first-child {
+    margin-top: 0; }
+/* line 23, ../../../sass/sections/content/sidebars.scss */
+#container > nav ul, #container > aside ul {
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 28, ../../../sass/sections/content/sidebars.scss */
+  #container > nav ul li, #container > aside ul li {
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 0; }
+  /* line 34, ../../../sass/sections/content/sidebars.scss */
+  #container > nav ul a, #container > aside ul a {
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #656d78;
+    text-decoration: none;
+    margin-left: 15px; }

@@ -1,0 +1,86 @@
+@import "fonts";
+@import "swatches";
+
+body > nav {
+  @include font-style-sans;
+  
+  background-color: $dark-gray-dark;
+  color: $light-gray-light;
+  height: 50px;
+
+  #views {
+    padding: 10px;
+
+    & > #selected-box {
+      background-color: $dark-gray-medium;
+      color: $light-gray-light;
+      display: block;
+      padding: 6px 10px 6px 10px;
+
+      img {
+        float: right;
+        margin-top: 2px;
+      }
+    }
+
+    & > #views-container {
+      background-color: $dark-gray-medium;
+      display: none;
+      position: absolute;
+    }
+  }
+
+  /**
+   * View Menu
+   */
+  & > ul#top-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        @include font-style-sans(13px, 400);
+        
+        color: $light-gray-dark;
+        text-decoration: none;
+        display: block;
+        padding: 17px 10px 16px 10px;
+
+        &.selected, &:hover, &:focus {
+          color: $light-gray-light;
+        }
+      }
+    }
+  }
+
+  div#user-info {
+    background: $black;
+    height: 50px;
+    padding: 0 10px 0 10px;
+
+    div.drop-down {
+      padding-left: 5px;
+    }
+
+    div#user-photo, div#user-name, div.drop-down {
+      line-height: 50px;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    div#user-menu {
+      background-color: $black;
+      
+      display: none;
+      position: absolute;
+      height: 200px;
+      width: 500px;
+      right: 0;
+    }
+  }
+}

@@ -3,11 +3,20 @@
 
 @import "css3/flexbox";
 
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Signika:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
 @import "grid";
 @import "fonts";
 
 // Sections
-@import "sections/header";
-@import "sections/viewbar";
-@import "sections/content";
+@import "sections/header/layout";
+@import "sections/header/header";
+@import "sections/header/nav";
+
 @import "sections/footer";
+
+@import "sections/content/layout";
+@import "sections/content/sidebars";
+@import "sections/content/content";

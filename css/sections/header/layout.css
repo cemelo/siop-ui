@@ -1,0 +1,203 @@
+/* line 36, ../../../sass/grid.scss */
+.no-flexbox body {
+  width: 100%;
+  *zoom: 1; }
+  /* line 27, ../../../sass/grid.scss */
+  .no-flexbox body:before, .no-flexbox body:after {
+    content: "";
+    display: table; }
+  /* line 31, ../../../sass/grid.scss */
+  .no-flexbox body:after {
+    clear: both; }
+
+/**
+ * HEADER
+ */
+/* line 10, ../../../sass/sections/header/layout.scss */
+header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+  /* line 42, ../../../sass/grid.scss */
+  .no-flexbox header {
+    margin: 0 0%;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 27, ../../../sass/grid.scss */
+    .no-flexbox header:before, .no-flexbox header:after {
+      content: "";
+      display: table; }
+    /* line 31, ../../../sass/grid.scss */
+    .no-flexbox header:after {
+      clear: both; }
+  /* line 49, ../../../sass/grid.scss */
+  .flexbox header {
+    display: -webkit-flex;
+    display: flex; }
+  /* line 13, ../../../sass/sections/header/layout.scss */
+  header > #logotype {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox header > #logotype {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+  /* line 17, ../../../sass/sections/header/layout.scss */
+  header #search {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox header #search {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+  /* line 21, ../../../sass/sections/header/layout.scss */
+  header #notifications {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox header #notifications {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+
+/**
+ * VIEW NAVIGATION BAR
+ */
+/* line 29, ../../../sass/sections/header/layout.scss */
+body > nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+  /* line 42, ../../../sass/grid.scss */
+  .no-flexbox body > nav {
+    margin: 0 0%;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 27, ../../../sass/grid.scss */
+    .no-flexbox body > nav:before, .no-flexbox body > nav:after {
+      content: "";
+      display: table; }
+    /* line 31, ../../../sass/grid.scss */
+    .no-flexbox body > nav:after {
+      clear: both; }
+  /* line 49, ../../../sass/grid.scss */
+  .flexbox body > nav {
+    display: -webkit-flex;
+    display: flex; }
+  /* line 32, ../../../sass/sections/header/layout.scss */
+  body > nav #views {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox body > nav #views {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+  /* line 36, ../../../sass/sections/header/layout.scss */
+  body > nav > ul#top-menu {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox body > nav > ul#top-menu {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+  /* line 40, ../../../sass/sections/header/layout.scss */
+  body > nav div#user-info {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox body > nav div#user-info {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+    /* line 43, ../../../sass/sections/header/layout.scss */
+    body > nav div#user-info div.nested-grid {
+      width: 100% -correction; }
+      /* line 59, ../../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div.nested-grid {
+        display: block;
+        margin: 0 0% -correction;
+        overflow: hidden;
+        *zoom: 1; }
+        /* line 27, ../../../sass/grid.scss */
+        .no-flexbox body > nav div#user-info div.nested-grid:before, .no-flexbox body > nav div#user-info div.nested-grid:after {
+          content: "";
+          display: table; }
+        /* line 31, ../../../sass/grid.scss */
+        .no-flexbox body > nav div#user-info div.nested-grid:after {
+          clear: both; }
+      /* line 67, ../../../sass/grid.scss */
+      .flexbox body > nav div#user-info div.nested-grid {
+        display: -webkit-flex;
+        display: flex; }
+    /* line 47, ../../../sass/sections/header/layout.scss */
+    body > nav div#user-info div#user-name {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 70.83333%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      /* line 75, ../../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div#user-name {
+        display: inline-block;
+        float: left;
+        margin: 0 0%;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; }
+    /* line 55, ../../../sass/sections/header/layout.scss */
+    body > nav div#user-info div#user-photo {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 20.83333%; }
+      /* line 75, ../../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div#user-photo {
+        display: inline-block;
+        float: left;
+        margin: 0 0%;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; }
+    /* line 59, ../../../sass/sections/header/layout.scss */
+    body > nav div#user-info div.drop-down {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 8.33333%; }
+      /* line 75, ../../../sass/grid.scss */
+      .no-flexbox body > nav div#user-info div.drop-down {
+        display: inline-block;
+        float: left;
+        margin: 0 0%;
+        margin-bottom: -99999px;
+        padding-bottom: 99999px; }

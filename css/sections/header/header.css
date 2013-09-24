@@ -1,0 +1,32 @@
+/* line 36, ../../../sass/grid.scss */
+.no-flexbox body {
+  width: 100%;
+  *zoom: 1; }
+  /* line 27, ../../../sass/grid.scss */
+  .no-flexbox body:before, .no-flexbox body:after {
+    content: "";
+    display: table; }
+  /* line 31, ../../../sass/grid.scss */
+  .no-flexbox body:after {
+    clear: both; }
+
+/* line 7, ../../../sass/sections/header/header.scss */
+body > header {
+  background-color: #8cc152;
+  border-bottom: 2px solid #6ca132;
+  height: 50px; }
+  /* line 12, ../../../sass/sections/header/header.scss */
+  body > header > #logotype {
+    font-family: Signika, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+    font-size: 22pt;
+    font-weight: 400;
+    color: #f5f7fa;
+    padding: 5px 10px 4px 10px; }
+    /* line 18, ../../../sass/sections/header/header.scss */
+    body > header > #logotype span:first-child {
+      display: inline-block;
+      vertical-align: middle; }
+    /* line 23, ../../../sass/sections/header/header.scss */
+    body > header > #logotype span:last-child {
+      display: inline-block;
+      vertical-align: baseline; }

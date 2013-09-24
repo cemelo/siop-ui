@@ -1,0 +1,62 @@
+/* line 36, ../../../sass/grid.scss */
+.no-flexbox body {
+  width: 100%;
+  *zoom: 1; }
+  /* line 27, ../../../sass/grid.scss */
+  .no-flexbox body:before, .no-flexbox body:after {
+    content: "";
+    display: table; }
+  /* line 31, ../../../sass/grid.scss */
+  .no-flexbox body:after {
+    clear: both; }
+
+/* line 5, ../../../sass/sections/content/layout.scss */
+body > #container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+  /* line 42, ../../../sass/grid.scss */
+  .no-flexbox body > #container {
+    margin: 0 0%;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 27, ../../../sass/grid.scss */
+    .no-flexbox body > #container:before, .no-flexbox body > #container:after {
+      content: "";
+      display: table; }
+    /* line 31, ../../../sass/grid.scss */
+    .no-flexbox body > #container:after {
+      clear: both; }
+  /* line 49, ../../../sass/grid.scss */
+  .flexbox body > #container {
+    display: -webkit-flex;
+    display: flex; }
+  /* line 8, ../../../sass/sections/content/layout.scss */
+  body > #container > aside, body > #container > nav {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%;
+    background-color: #f5f7fa;
+    padding: 10px; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox body > #container > aside, .no-flexbox body > #container > nav {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }
+  /* line 15, ../../../sass/sections/content/layout.scss */
+  body > #container > section#content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%; }
+    /* line 75, ../../../sass/grid.scss */
+    .no-flexbox body > #container > section#content {
+      display: inline-block;
+      float: left;
+      margin: 0 0%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px; }

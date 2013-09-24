@@ -1,0 +1,34 @@
+@import "grid";
+@import "fonts";
+@import "swatches";
+
+@import "compass/css3/box-sizing";
+
+body > header {
+  background-color: $grass-dark;
+  border-bottom: 2px solid $grass-darker;
+  height: 50px;
+
+  & > #logotype {
+    @include font-style-sans(22pt);
+
+    color: $light-gray-light;
+    padding: 5px 10px 4px 10px;
+
+    span:first-child {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    span:last-child {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+  }
+
+  #search {
+  }
+
+  #notifications {
+  }
+}

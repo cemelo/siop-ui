@@ -1,0 +1,20 @@
+@import "fonts";
+@import "swatches";
+
+#container > section#content {
+  padding: 15px 20px 15px 20px;
+
+  div.content-title {
+    border-bottom: 1px solid $light-gray-medium;
+  }
+
+  h1 {
+    @include font-style-sans(30px, 300);
+
+    color: $dark-gray-dark;
+
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}

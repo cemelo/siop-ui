@@ -1,0 +1,18 @@
+@import "grid";
+@import "fonts";
+@import "swatches";
+
+body > #container {
+	@include container;
+
+	& > aside, & > nav {
+		@include column(2);
+
+		background-color: $light-gray-light;
+		padding: 10px;
+	}
+
+	& > section#content {
+		@include column(8);
+	}
+}

@@ -1,0 +1,63 @@
+@import "grid";
+@import "fonts";
+@import "swatches";
+
+@import "compass/css3/box-sizing";
+
+/**
+ * HEADER
+ */
+header {
+  @include container;
+  
+  & > #logotype {
+    @include column(2);
+  }
+
+  #search {
+    @include column(8);
+  }
+
+  #notifications {
+    @include column(2);
+  }
+}
+
+/**
+ * VIEW NAVIGATION BAR
+ */
+body > nav {
+  @include container;
+  
+  #views {
+    @include column(2);
+  }
+
+  & > ul#top-menu {
+    @include column(8);
+  }
+
+  div#user-info {
+    @include column(2);
+
+    div.nested-grid {
+      @include row(2);
+    }
+
+    div#user-name {
+      @include column(8.5);
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    div#user-photo {
+      @include column(2.5);
+    }
+
+    div.drop-down {
+      @include column(1);
+    }
+  }
+}
