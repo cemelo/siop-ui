@@ -776,7 +776,7 @@ body > #container {
 #container > nav h1, #container > aside h1 {
   font-family: Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 500;
   color: #aab2bd;
   text-transform: uppercase;
   text-shadow: 1px 1px white;
@@ -809,7 +809,7 @@ body > #container {
 #container > section#content {
   padding: 15px 20px 15px 20px; }
   /* line 7, ../sass/sections/content/content.scss */
-  #container > section#content div.content-title {
+  #container > section#content header {
     border-bottom: 1px solid #e6e9ed; }
   /* line 11, ../sass/sections/content/content.scss */
   #container > section#content h1 {

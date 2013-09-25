@@ -4,7 +4,7 @@
 #container {
   & > nav, & > aside {
     h1 {
-      @include font-sans-serif(11px, bold);
+      @include font-sans-serif(11px, 500);
 
       color: $dark-gray-light;
       
