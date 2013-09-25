@@ -34,16 +34,18 @@ function PainelAbas(vElementoDOM) {
 		console.log(topoDaBarra + "," + topoDoPainel);
 		if (topoDaBarra > topoDoPainel) {
 			//fixar área do rotulos
-			this.divBandejaRotulos.classList.add('sticky');
-			//this.divBandejaRotulos.style.width = getComputedStyle(this.divBandejaRotulos.parentNode, null).width;
+			this.divAbas.style.position = 'absolute';
+			this.divAbas.style.left = getComputedStyle(this.divBandejaRotulos, false).width;
+			this.divBandejaRotulos.classList.add('sticky');			
 
 			for (var i = 0; i < this.abas.length; i++) {
 				var aba = this.abas[i];
 				var topoDaAba = aba.elementoDOM.offsetTop;
+				var rotuloNaBandeja = document.querySelectorAll('.painelAbas .bandejaDeRotulos .rotulo').item(i);
 				if (topoDaBarra > topoDaAba) {
-					//aba.divRotulo.classList.add('sticky');
+					rotuloNaBandeja.classList.add('abaAtiva');
 				} else {
-					//aba.divRotulo.classList.remove('sticky');
+					rotuloNaBandeja.classList.remove('abaAtiva');
 				}
 			}
 		} else {
@@ -90,7 +92,7 @@ function onScroll(e) {
 	for (var i = 0; i < abas.length; ++i) {
 		var aba = abas[i];
 		if (window.scrollY >= aba.offsetTop) {
-			aba.classList.add('sticky');
+			//aba.classList.add('sticky');
 			//aba.style.width = getComputedStyle(aba.parentNode, null).width;
 		}
 	}
@@ -99,7 +101,7 @@ function onScroll(e) {
 	for (var i = 0; i < abas.length; ++i) {
 		var aba = abas[i];
 		if (window.scrollY < aba.parentNode.offsetTop) {
-			aba.className = 'labelContainer';
+			//aba.className = 'labelContainer';
 		}
 	}
 
