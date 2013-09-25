@@ -811,12 +811,34 @@ body > #container {
   /* line 7, ../sass/sections/content/content.scss */
   #container > section#content header {
     border-bottom: 1px solid #e6e9ed; }
-  /* line 11, ../sass/sections/content/content.scss */
-  #container > section#content h1 {
-    font-family: Signika, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    color: #434a54;
-    display: inline-block;
-    margin: 0;
-    padding: 0; }
+    /* line 10, ../sass/sections/content/content.scss */
+    #container > section#content header h1 {
+      font-family: Signika, Helvetica Neue, Helvetica, Ubuntu Sans, Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      color: #434a54;
+      display: inline-block;
+      margin: 0;
+      padding: 0; }
+
+/* line 4, ../sass/theme/ViewSelector.scss */
+.siopViewSelector {
+  padding: 10px; }
+  /* line 7, ../sass/theme/ViewSelector.scss */
+  .siopViewSelector > .siopViewSelectorDropDown {
+    background-color: #656d78;
+    color: #f5f7fa;
+    display: block;
+    padding: 6px 10px 6px 10px; }
+    /* line 13, ../sass/theme/ViewSelector.scss */
+    .siopViewSelector > .siopViewSelectorDropDown img {
+      float: right;
+      margin-top: 2px; }
+  /* line 19, ../sass/theme/ViewSelector.scss */
+  .siopViewSelector > .siopViewSelectorMenu {
+    background-color: #656d78;
+    display: none;
+    position: absolute; }
+  /* line 25, ../sass/theme/ViewSelector.scss */
+  .siopViewSelector.siopViewSelector-opened > .siopViewSelectorMenu {
+    display: block; }

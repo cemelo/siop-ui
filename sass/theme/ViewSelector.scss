@@ -1,0 +1,28 @@
+@import "fonts";
+@import "swatches";
+
+.siopViewSelector {
+  padding: 10px;
+
+  & > .siopViewSelectorDropDown {
+    background-color: $dark-gray-medium;
+    color: $light-gray-light;
+    display: block;
+    padding: 6px 10px 6px 10px;
+
+    img {
+      float: right;
+      margin-top: 2px;
+    }
+  }
+
+  & > .siopViewSelectorMenu {
+    background-color: $dark-gray-medium;
+    display: none;
+    position: absolute;
+  }
+
+  &.siopViewSelector-opened > .siopViewSelectorMenu {
+    display: block;
+  }
+}

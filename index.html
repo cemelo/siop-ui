@@ -7,6 +7,7 @@
   <meta http-equiv="Expires" content="-1">
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="js/vendor/dijit/themes/claro/claro.css">
   
   <script>
     var dojoConfig = {
@@ -45,7 +46,8 @@
   </header>
 
   <nav>
-    <div id="views" data-dojo-type="siop/ViewSelector">
+    <div id="views">
+
     </div>
 
     <ul id="top-menu">
@@ -92,6 +94,24 @@
       <header>
         <h1>20000 Presidência da República</h1>
       </header>
+
+      <div data-dojo-type="siop/menu/MultiColumnMenu">
+        <div data-dojo-type="siop/menu/Group">
+          <span>Funcional-Programática</span>
+          <div data-dojo-type="siop/menu/MenuItem">Órgão</div>
+          <div data-dojo-type="siop/menu/MenuItem">Unidade Orçamentária</div>
+        </div>
+        <div data-dojo-type="siop/menu/Group">
+          <span>Receita</span>
+          <div data-dojo-type="siop/menu/MenuItem">Cenários</div>
+          <div data-dojo-type="siop/menu/MenuItem">Transformações</div>
+        </div>
+        <div data-dojo-type="siop/menu/Group">
+          <span>Receita2</span>
+          <div data-dojo-type="siop/menu/MenuItem">Cenários</div>
+          <div data-dojo-type="siop/menu/MenuItem">Transformações</div>
+        </div>
+      </div>
     </section>
 
     <aside>
