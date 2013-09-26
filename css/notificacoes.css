@@ -1,0 +1,37 @@
+#bandejaNotificacoes {
+	margin:0px;
+	padding:10px;
+	width:100%;
+}
+
+#bandejaNotificacoes object {
+	display: block;
+	margin:0px;
+	padding:10px;
+	width:100%;
+}
+
+#bandejaNotificacoes .itemNotificacao {
+	float:left;
+	width:32%;
+	text-align: center;
+	position: relative;
+}
+
+#bandejaNotificacoes .itemNotificacao .contador {
+	background-color: rgb(252,110,81);
+	position:absolute;
+	left:51%;
+	top:-5px;
+	font-size: 55%;
+	font-weight:600;
+	color: #FFFFFF;
+	padding: 2px 2px;
+	line-height: 0.9;
+	min-width:8px;
+	border-right:1px solid rgb(190,136,72);
+	border-bottom:1px solid rgb(190,136,72);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
